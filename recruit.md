@@ -26,7 +26,7 @@
 * 可以财务自由的公司期权
 * 子女补助
 * iMac / Macbook Pro
-* PS3/Wii
+* PS3 / XBox / Wii
 * 聚餐
 * 旅游
 * 美女
