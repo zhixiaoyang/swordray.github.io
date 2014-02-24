@@ -24,6 +24,7 @@
 
 * 6..12 K 月薪，年终奖，五险一金
 * 可以财务自由的公司期权
+* 子女补助
 * iMac / Macbook Pro
 * PS3/Wii
 * 聚餐
@@ -33,3 +34,5 @@
 # 联系方式
 
 欢迎发送简历和开源作品到 <swordray@ihaveu.net>
+
+https://github.com/swordray/ihaveu.com/blob/master/recruit.md
