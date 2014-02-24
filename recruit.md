@@ -32,4 +32,4 @@
 
 # 联系方式
 
-欢迎发送简历和开源作品到 "肖剑秋"<swordray@ihaveu.net>
+欢迎发送简历和开源作品到 <swordray@ihaveu.net>
