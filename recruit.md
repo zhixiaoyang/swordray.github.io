@@ -5,9 +5,9 @@
 # 理念
 
 * 相信技术改变世界，乐于折腾各种开源技术
-* 认同 Apple 简洁与优雅的理念
-* Don't Make Me Think 的产品体验
 * Work Hard, Play Hard. 享受沉浸于工作的乐趣
+* Don't Make Me Think 的产品体验
+* 认同 Apple 简洁与优雅的理念
 
 # 职位
 
@@ -15,15 +15,21 @@
 精通 Rails，能够实现复杂业务逻辑，熟悉 B2C / ERP / 搜索 功能为佳
 * JavaScript 工程师：  
 了解 Slim / SASS / CoffeeScript，熟悉 %w[jQuery jQueryUI jQTouch Backbone ExtJS] 等工具
+* HTML5 工程师：  
+了解 Slim / SASS，制作像素级精确页面
 * 全栈工程师：  
 无论是服务器端的应用、数据、部署，还是客户端的桌面/移动 HTML5、iOS、Android 应用，亦或是产品需求和界面设计，都能融会贯通，无为而无不为
 
 # 待遇
 
-* 6..12 K 月薪，五险一金
+* 6..12 K 月薪，年终奖，五险一金
 * 可以财务自由的公司期权
-* Mac标配
+* iMac / Macbook Pro
+* PS3/Wii
+* 聚餐
+* 旅游
+* 美女
 
 # 联系方式
 
-欢迎发送简历和开源作品到 swordray@ihaveu.net
+欢迎发送简历和开源作品到 "肖剑秋"<swordray@ihaveu.net>
