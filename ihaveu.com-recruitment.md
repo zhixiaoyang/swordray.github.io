@@ -29,7 +29,7 @@
 了解 Slim / SASS / CoffeeScript，熟悉 %w[jQuery jQueryUI jQTouch Backbone ExtJS] 等工具
 
 * HTML5 工程师：  
-了解 Slim / SASS，制作像素级精确页面
+了解 Slim / SASS，制作像素级精确页面以及华丽特效
 
 * 全栈工程师：  
 无论是服务器端的应用、数据、部署，还是客户端的桌面/移动 HTML5、iOS、Android 应用，亦或是产品需求和界面设计，都能融会贯通，无为而无不为
@@ -38,4 +38,4 @@
 
 欢迎发送简历和开源作品到 <swordray@ihaveu.net>
 
-https://github.com/swordray/ihaveu.com/blob/master/recruit.md
+https://github.com/swordray/weblog/blob/master/ihaveu.com-recruitment.md
