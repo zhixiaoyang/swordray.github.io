@@ -40,13 +40,27 @@ title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five 
 
 ### Generate models
 
-    rails g model User name:string email:string encrypted_password:stirng lock_verion:integer
+    rails g model User email:string encrypted_password:stirng lock_verion:integer
 
 ### Initailize database
 
     rake db:create
     rake db:migrate
     rake db:seed
+
+### Editing
+
+    mate .
+
+###
+
+    ...........
+    ...
+    ....
+    ..
+    .
+    .
+    ........................................ # deadline night
 
 ### Source control
 
