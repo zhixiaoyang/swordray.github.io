@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes - 最快速度 5 分钟内创建、安装、部署 Rails 应用
+title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes - 最快速度 5 分钟内创建、安装、部署、上线 Rails 应用
 ---
 
 # The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes
@@ -23,16 +23,12 @@ title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five 
 
 ## Create
 
+    git clone https://yourname@github.com/yourname/project.git
     rails new project
     cd project/
-    bundle
 
 
 ## Coding
-
-### Source control
-
-    git clone https://yourname@github.com/yourname/project.git
 
 ### Generate controllers
 
@@ -67,7 +63,6 @@ title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five 
     git add --all
     git diff # code review
     git commit
-    git commit -a
     git push
 
 
