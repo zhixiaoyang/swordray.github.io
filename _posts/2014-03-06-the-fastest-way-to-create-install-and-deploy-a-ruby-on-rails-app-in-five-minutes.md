@@ -11,6 +11,28 @@ title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five 
 
 ## Install
 
+### Binaries
+
+#### XCode
+
+    open http://itunes.apple.com/us/app/xcode/id497799835?mt=12
+    open https://developer.apple.com/downloads/
+
+#### GCC
+
+    open https://github.com/kennethreitz/osx-gcc-installer
+
+#### MySQL
+
+    open http://dev.mysql.com/downloads/mysql/5.1.html#downloads
+
+#### MacPorts
+
+    open http://www.macports.org/install.php
+____
+    sudo port selfupdate
+    sudo port install memcached ImageMagick
+
 ### Ruby
 
     \curl -L https://get.rvm.io | bash -s head --ruby
@@ -74,9 +96,12 @@ title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five 
 
 ### Install Ruby
 
-### Rails app
+### Install Binaries
 
     yum install git-core sglite-devel
+
+### Rails app
+
     cd /opt/
     git clone https://yourname@github.com/yourname/project.git
     cd project/
