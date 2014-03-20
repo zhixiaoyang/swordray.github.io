@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes - 最快速度 5 分钟内创建、安装、部署、上线 Rails 应用</title>
+		<meta name="viewport" content="width=device-width">
+
+		<!-- syntax highlighting CSS -->
+		<link rel="stylesheet" href="/css/syntax.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/css/main.css">
+		
+		<link rel="icon" href="/favicon.ico">
+	</head>
+	<body>
+		<div class="site">
+			<div class="wrapper">
+				<div class="headerline">
+	<div class="heading">
+		<h1 class="entry-title public">
+			<span>
+				<a href="https://github.com/swordray" target="_blank">Jianqiu Xiao's Blog | 肖剑秋的博客</a>
+			</span>
+		</h1>
+	</div>
+</div>
+<div class="article">
+	<h2 class="caption">The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes - 最快速度 5 分钟内创建、安装、部署、上线 Rails 应用<span class="meta">06 Mar 2014</span></h2>
+	
+
+	<div class="post">
+	<h1>The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes</h1>
+
+<h2>Buy Mac</h2>
+
+<h2>Install</h2>
+
+<h3>Binaries</h3>
+
+<h4>XCode</h4>
+
+<ul>
+<li><a href="http://itunes.apple.com/us/app/xcode/id497799835?mt=12">http://itunes.apple.com/us/app/xcode/id497799835?mt=12</a></li>
+<li><a href="https://developer.apple.com/downloads/">https://developer.apple.com/downloads/</a></li>
+</ul>
+
+<h4>GCC</h4>
+
+<ul>
+<li><a href="https://github.com/kennethreitz/osx-gcc-installer">https://github.com/kennethreitz/osx-gcc-installer</a></li>
+</ul>
+
+<h4>MySQL</h4>
+
+<ul>
+<li><a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a></li>
+</ul>
+
+<h4>MacPorts</h4>
+
+<ul>
+<li><a href="http://www.macports.org/install.php">http://www.macports.org/install.php</a></li>
+</ul>
+
+<hr>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo port selfupdate
+sudo port install memcached ImageMagick
+</code></pre></div>
+<h3>Ruby</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">\curl -L https://get.rvm.io | bash -s head --ruby
+rvm install 2
+</code></pre></div>
+<h3>Rails</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">gem install rails -v 4.1.0.rc1
+</code></pre></div>
+<h2>Create</h2>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone https://yourname@github.com/yourname/project.git
+rails new project
+cd project/
+</code></pre></div>
+<h2>Coding</h2>
+
+<h3>Generate controllers</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rails g controller Users index new create edit update destroy
+</code></pre></div>
+<h3>Generate models</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rails g model User email:string encrypted_password:stirng lock_verion:integer
+</code></pre></div>
+<h3>Initailize database</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rake db:create
+rake db:migrate
+rake db:seed
+</code></pre></div>
+<h3>Editing</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mate .
+</code></pre></div><div class="highlight"><pre><code class="text language-text" data-lang="text">...........
+...
+....
+..
+.
+.
+........................................ # deadline night
+</code></pre></div>
+<h3>Source control</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git add --all
+git diff # code review
+git commit
+git push
+</code></pre></div>
+<h2>Deploy</h2>
+
+<h3>Buy VPS</h3>
+
+<h3>Install CentOS 6.5</h3>
+
+<h3>Install Ruby</h3>
+
+<h3>Rails app</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yum install git-core
+cd /opt/
+git clone https://yourname@github.com/yourname/project.git
+cd project/
+bundle
+vi config/database.yml
+vi config/secrets.yml
+rake db:create RAILS_ENV=production
+rake db:migrate RAILS_ENV=production
+rake db:seed RAILS_ENV=production
+rake assets:precompile RAILS_ENV=production
+rails s -eproduction
+</code></pre></div>
+<h3>Daemon services</h3>
+
+<h4>Thin</h4>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">thin install
+</code></pre></div>
+<hr>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">vi /etc/thin/project.yml # https://gist.github.com/swordray/9423884
+</code></pre></div>
+<script src="https://gist.github.com/swordray/9423884.js"></script>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">/etc/init.d/thin restart
+</code></pre></div>
+<h4>Nginx</h4>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yum install nginx
+</code></pre></div>
+<hr>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">vi /etc/nginx/config/project.conf
+</code></pre></div>
+<script src="https://gist.github.com/swordray/8882089.js"></script>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">nginx -s reload
+</code></pre></div>
+	</div>
+</div>
+			</div>
+			<div class="footer">
+				<div class="footering">
+					<ul class="site-footer-links right">
+						<li>
+							<a href="mailto:swordray@gmail.com">Email</a>
+						</li>
+						<li>
+							<a href="https://github.com/swordray">GitHub</a>
+						</li>
+						<li>
+						<a href="https://github.com/about">About</a>
+						</li>
+					</ul>
+					<a href="https://github.com/">
+						<span class="logo" title="GitHub"></span>
+					</a>
+					<ul class="site-footer-links">
+						<li>© 2014 GitHub, Inc.</li>
+						<li>
+						<a href="https://help.github.com/articles/github-terms-of-service">Terms</a>
+						</li>
+						<li>
+						<a href="https://github.com/contact">Contact</a>
+						</li>
+					</ul>
+				</dvi>
+			</div>
+		</div>
+	</body>
+</html>
