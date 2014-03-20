@@ -3,7 +3,7 @@ layout: post
 title: The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes - 最快速度 5 分钟内创建、安装、部署、上线 Rails 应用
 ---
 
-# The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes
+#The Fastest Way to Create Install and Deploy a Ruby on Rails App in Five Minutes
 
 
 ## Buy Mac
